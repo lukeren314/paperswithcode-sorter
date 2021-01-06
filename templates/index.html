@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="../static/script.js"></script>
+        <link rel="stylesheet" href="../static/style.css">
+
+
+        <script src="static/script.js"></script>
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+    <body>
+        <h1>Papers With Code Query</h1>
+        <div>
+            <div>
+                <p>Number Of Papers <input id="num-papers" value="100"></p>
+                
+            </div>
+            <button onclick="getPapers()">Search</button>
+        </div>
+        <div>
+            <h2>Options</h2>
+            <div>
+                <div>
+                    <p>Sort By:
+                        <button class="selected" id="stars">Stars</button>
+                        <button id="published-date">Published Date</button>
+                    </p>
+                    <p>
+                        Sort Order:
+                        <button class="selected" id=descending>Descending</button>
+                        <button id="ascending">Ascending</button>
+                    </p>
+                </div>
+                <div>
+                    <p>Include:
+                        <button class="selected" id="all-time">All Time</button>
+                        <button id="today">Today</button>
+                        <button id="this-week">This Week</button>
+                        <button id="this-month">This Month</button>
+                        <button id="this-year">This Year</button>
+                        <button id="ytd">YTD</button>
+                    </p>
+                </div>
+                <div>
+                    <p>Tasks: <input id="tasks"></p>
+                </div>
+                <div>
+                    <button id="must-have-repository">Must Have Repository</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="loader" id="papers-loader"></div>
+            <ol id="papers-list">
+
+            </ol>
+        </div>
+    </body>
+</html>
